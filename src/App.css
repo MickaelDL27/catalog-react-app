@@ -1,0 +1,199 @@
+/* Algemene Layout */
+.container {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    font-family: sans-serif;
+}
+
+h1, h2, h3 {
+    color: #4a59bb;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Product Grid (gebruik van CSS Grid) */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* Product Card Styling */
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-3px);
+}
+
+.product-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 1.4em;
+    color: #ff6347;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-card button {
+    background-color: #4a59bb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Winkelwagen Styling */
+.cart-summary {
+    background-color: #e6e6fa; 
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+}
+
+.cart-summary h2 {
+    color: #3b479e;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px dotted #ccc;
+}
+.cart-item .item-details {
+    margin-right: auto; 
+    margin-left: 10px;
+}
+
+.remove-btn {
+    background-color: #ff6347; 
+    color: white;
+    border: none;
+    border-radius: 50%; 
+    width: 20px;
+    height: 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    line-height: 1;
+    padding: 0;
+}
+
+.remove-btn:hover {
+    background-color: #e34e32;
+}
+
+.cart-total {
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+/* Styling voor de FilterBar */
+.filter-bar {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #f0f0f5;
+    border-radius: 5px;
+}
+
+.filter-bar h3 {
+    color: #3b479e;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.filter-btn {
+    padding: 10px 15px;
+    margin: 0 5px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 600;
+}
+
+/* De actieve filter moet duidelijk zijn */
+.filter-btn.active {
+    background-color: #4a59bb;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.filter-btn:hover:not(.active) {
+    background-color: #cacaca;
+}
+
+/* Styling voor de FilterBar en SortDropdown container */
+.controls-bar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: #f7f7fa; 
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Styling voor de Sorteer Dropdown */
+.sort-container {
+    display: flex;
+    align-items: center;
+}
+
+.sort-container label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
+
+#sortSelect {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Zorg dat de FilterBar links blijft staan (deze hebben we al gemaakt) */
+.filter-bar {
+    text-align: left; 
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
