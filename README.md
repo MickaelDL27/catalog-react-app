@@ -1,16 +1,22 @@
-# React + Vite
+# 🛒 React E-commerce Producten Catalogus
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dit project is een volledig functionele **Single Page Application (SPA)** gebouwd met **React (Vite)**. Het simuleert de kern van een e-commerce website en dient als showcase voor geavanceerd **State Management** en componentarchitectuur.
 
-Currently, two official plugins are available:
+<img width="962" height="907" alt="produictcatalogusReact" src="https://github.com/user-attachments/assets/5b8e4e91-262b-4f25-bf83-de606ae6620c" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🔑 Kernfunctionaliteiten & React Concepts
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **State Management:** Gebruik van de `useState` hook om de centrale staat van de app (producten, winkelwagen, filters, sortering) te beheren.
+* **Winkelwagen Logica:** Items toevoegen, de hoeveelheid verhogen/verlagen en items volledig verwijderen, met behoud van de **Immutability** van de state.
+* **Dynamische Weergave:** Implementatie van filters en sortering die onmiddellijk de weergegeven productlijst aanpassen.
+* **Props Drilling:** Het doorgeven van data en callback-functies (`addToCart`, `removeFromCart`) via props naar kindcomponenten.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Setup en Hosting
+
+| Status | Link |
+| :--- | :--- |
+| **Live Demo** | **https://mickaeldl27.github.io/catalog-react-app/** |
